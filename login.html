@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic" rel="stylesheet" />
+  <script src="main.js"></script>
+  <title>LOGIN | NEW</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-left">
+        <img src="assets/img/wall-container.jpg" alt="">
+      </div>
+      <div class="card-right">
+        
+        <form action="#insert-your-url-page" name="myform" class="form" onsubmit="return nextPage()">
+          <h3 class="form-title">login</h3>
+          <div class="form-field">
+            <fieldset  class="user-name">
+              <label for="name"> Email address </label>
+                <input type="email" name="name" id="name" placeholder="Enter your email" required>
+            </fieldset>
+          </div>
+          <div class="form-field">
+            <fieldset class="password">
+              <label for="password">Set Password</label>
+                <div class="input-pass">
+                  <input type="password" name="password" id="showPass" required>
+                  <img src="assets/img/eye.png" onclick="show_password()">
+                </div>
+            </fieldset>
+          </div>
+          <div class="form-field-check">
+            <fieldset class="check">
+              <input type="checkbox" name="cbo" id="cbo">
+              <label for="cbo" >Aceptar las condiciones</label>
+            </fieldset>
+            <div class="button-sign">
+              <button class="btn-sign" onclick="mostrarContrasena()">Sign Up →</button>
+            </div>
+          </div>
+          <div class="separator">
+            <hr>
+          </div>
+          <div class="auto-connection-google">
+              <a href="#" class="link-google">
+                  <img src="assets/img/google.png" alt="Google">
+                  Continue with Google</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
